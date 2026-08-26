@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apresentação acadêmica sobre a revolução da computação em nuvem: modelos, serviços, termos técnicos e tendências.">
+    <title>A Revolução da Computação em Nuvem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DEFINIÇÕES SVG GLOBAIS -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8"/>
+                <stop offset="100%" stop-color="#818cf8"/>
+            </linearGradient>
+            <radialGradient id="coreGrad">
+                <stop offset="0%" stop-color="#7dd3fc"/>
+                <stop offset="100%" stop-color="#38bdf8"/>
+            </radialGradient>
+            <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#38bdf8"/>
+                <stop offset="100%" stop-color="#818cf8"/>
+            </linearGradient>
+            <radialGradient id="bulbGrad">
+                <stop offset="0%" stop-color="#fef08a"/>
+                <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.4"/>
+            </radialGradient>
+            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                <path d="M0 0 L10 5 L0 10 z" fill="rgba(148,163,184,0.7)"/>
+            </marker>
+        </defs>
+    </svg>
+
+    <!-- BARRA DE PROGRESSO DE LEITURA -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- NAV LATERAL -->
+    <nav id="dot-nav" aria-label="Navegação entre tópicos">
+        <a class="dot-nav-item" data-target="topico-1" href="#topico-1"><span class="dot-label">Introdução</span></a>
+        <a class="dot-nav-item" data-target="topico-2" href="#topico-2"><span class="dot-label">Modelos de Implantação</span></a>
+        <a class="dot-nav-item" data-target="topico-3" href="#topico-3"><span class="dot-label">Pilares de Serviços</span></a>
+        <a class="dot-nav-item" data-target="topico-4" href="#topico-4"><span class="dot-label">Termos Técnicos</span></a>
+        <a class="dot-nav-item" data-target="topico-5" href="#topico-5"><span class="dot-label">Tendências Futuras</span></a>
+        <a class="dot-nav-item" data-target="topico-6" href="#topico-6"><span class="dot-label">Conclusão</span></a>
+    </nav>
+
+    <div class="container">
+        <!-- CABEÇALHO / HERO -->
+        <header>
+            <svg class="hero-visual" viewBox="0 0 220 220" fill="none">
+                <line class="net-line" x1="110" y1="110" x2="40" y2="50" style="animation-delay:0.2s"/>
+                <line class="net-line" x1="110" y1="110" x2="180" y2="45" style="animation-delay:0.35s"/>
+                <line class="net-line" x1="110" y1="110" x2="30" y2="140" style="animation-delay:0.5s"/>
+                <line class="net-line" x1="110" y1="110" x2="190" y2="150" style="animation-delay:0.65s"/>
+                <line class="net-line" x1="110" y1="110" x2="70" y2="195" style="animation-delay:0.8s"/>
+                <line class="net-line" x1="110" y1="110" x2="150" y2="195" style="animation-delay:0.95s"/>
+                <circle class="net-node" cx="40" cy="50" r="6" style="animation-delay:0.7s"/>
+                <circle class="net-node" cx="180" cy="45" r="6" style="animation-delay:0.85s"/>
+                <circle class="net-node" cx="30" cy="140" r="6" style="animation-delay:1s"/>
+                <circle class="net-node" cx="190" cy="150" r="6" style="animation-delay:1.15s"/>
+                <circle class="net-node" cx="70" cy="195" r="6" style="animation-delay:1.3s"/>
+                <circle class="net-node" cx="150" cy="195" r="6" style="animation-delay:1.45s"/>
+                <circle class="net-node core" cx="110" cy="110" r="14" style="animation-delay:0.1s"/>
+            </svg>
+            <span class="badge"><span class="dot-live"></span>Cloud e Infraestrutura</span>
+            <h1>A Revolução da Computação em Nuvem</h1>
+            <p class="subtitle">Da Infraestrutura Local à Era Digital</p>
+            <div class="scroll-indicator">
+                <span>ROLE PARA EXPLORAR</span>
+                <svg viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+        </header>
+
+        <!-- TÓPICO 1 -->
+        <section id="topico-1">
+            <div class="card reveal">
+                <span class="section-number">Tópico 01</span>
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    </div>
+                    <h2>Introdução</h2>
+                </div>
+                <p>No cenário tecnológico contemporâneo, a computação em nuvem (cloud computing) consolidou-se como o pilar da transformação digital. Longe de ser um conceito abstrato, a nuvem representa uma mudança radical na forma como a sociedade armazena dados e executa softwares.</p>
+                <p>Em termos simples, um sistema de nuvem consiste no fornecimento de serviços de computação — incluindo servidores, armazenamento, bancos de dados, redes e aplicativos — através da internet. Em vez de empresas e usuários comprarem e manterem data centers ou computadores físicos pesados, eles "alugam" essa capacidade computacional de provedores globais, pagando estritamente pelo que consomem.</p>
+            </div>
+        </section>
+
+        <!-- TÓPICO 2 -->
+        <section id="topico-2">
+            <div class="card reveal">
+                <span class="section-number">Tópico 02</span>
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v3M16 15.5h3"/></svg>
+                    </div>
+                    <h2>Modelos de Atuação e Implantação</h2>
+                </div>
+                <p>Para compreender a versatilidade da nuvem, é necessário dividi-la em suas variações mais importantes, conhecidas como modelos de implantação. Eles determinam onde os dados residem e quem tem acesso a eles:</p>
+
+                <div class="deploy-diagrams">
+                    <div class="deploy-card">
+                        <svg viewBox="0 0 100 80" fill="none">
+                            <path class="deploy-cloud" d="M30 55c-8 0-14-6-14-13 0-6 4-11 10-13 2-8 9-14 18-14 8 0 15 5 17 13 7 1 12 7 12 14 0 7-6 13-14 13H30z"/>
+                            <circle class="deploy-node" cx="15" cy="68" r="4"/>
+                            <circle class="deploy-node" cx="50" cy="70" r="4"/>
+                            <circle class="deploy-node" cx="82" cy="66" r="4"/>
+                            <line class="deploy-link" x1="15" y1="68" x2="35" y2="52"/>
+                            <line class="deploy-link" x1="50" y1="70" x2="50" y2="55"/>
+                            <line class="deploy-link" x1="82" y1="66" x2="63" y2="52"/>
+                        </svg>
+                        <div class="deploy-label">Pública</div>
+                    </div>
+                    <div class="deploy-card">
+                        <svg viewBox="0 0 100 80" fill="none">
+                            <path class="deploy-cloud private-cloud" d="M55 50c-7 0-12-5-12-11 0-5 3-9 8-11 2-7 8-12 15-12 7 0 13 4 15 11 6 1 10 6 10 12 0 6-5 11-12 11H55z"/>
+                            <rect class="deploy-node" x="14" y="45" width="22" height="26" rx="2"/>
+                            <path class="deploy-node" d="M20 45v-6a5 5 0 0 1 10 0v6" fill="none" stroke="var(--text-tertiary)" stroke-width="2"/>
+                            <line class="deploy-link" x1="36" y1="55" x2="58" y2="48"/>
+                        </svg>
+                        <div class="deploy-label">Privada</div>
+                    </div>
+                    <div class="deploy-card">
+                        <svg viewBox="0 0 100 80" fill="none">
+                            <path class="deploy-cloud" d="M20 40c-6 0-11-5-11-10 0-5 3-9 8-10 2-6 7-10 14-10 6 0 11 4 13 10 5 1 9 5 9 10 0 5-5 10-11 10H20z"/>
+                            <path class="deploy-cloud private-cloud" d="M63 62c-6 0-11-4-11-9 0-5 3-8 7-9 2-6 7-10 14-10 6 0 11 4 12 9 5 1 9 5 9 9 0 5-5 9-11 9H63z"/>
+                            <path class="deploy-link" d="M38 38 L60 48" marker-end="url(#arrow)"/>
+                            <path class="deploy-link" d="M60 48 L38 38" marker-end="url(#arrow)"/>
+                        </svg>
+                        <div class="deploy-label">Híbrida</div>
+                    </div>
+                </div>
+
+                <div class="grid-list">
+                    <div class="list-item">
+                        <strong>Nuvem Pública</strong>
+                        Os recursos de computação são de propriedade de um provedor terceirizado e compartilhados com múltiplos clientes (chamados de tenants). É o modelo mais comum, econômico e altamente escalável.
+                    </div>
+                    <div class="list-item">
+                        <strong>Nuvem Privada</strong>
+                        A infraestrutura é utilizada exclusivamente por uma única organização. Ela pode residir fisicamente no data center local da empresa ou ser hospedada por um terceiro, oferecendo máximo controle e segurança para setores rígidos, como o bancário e o governamental.
+                    </div>
+                    <div class="list-item">
+                        <strong>Nuvem Híbrida</strong>
+                        Esta variação combina ambientes públicos e privados, permitindo que dados e aplicações compartilhem informações entre si. Uma empresa pode usar a nuvem privada para armazenar dados confidenciais de clientes e a nuvem pública para rodar aplicações de alto tráfego.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÓPICO 3 -->
+        <section id="topico-3">
+            <div class="card reveal">
+                <span class="section-number">Tópico 03</span>
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>
+                    </div>
+                    <h2>Pilares de Serviços e os Sistemas Mais Famosos</h2>
+                </div>
+                <p>A atuação da nuvem no mercado é categorizada em três camadas principais de serviço, dominadas pelas maiores potências globais de tecnologia:</p>
+
+                <div class="stack-diagram">
+                    <div class="stack-layer saas"><span>SaaS</span></div>
+                    <div class="stack-layer paas"><span>PaaS</span></div>
+                    <div class="stack-layer iaas"><span>IaaS</span></div>
+                </div>
+
+                <div class="grid-list">
+                    <div class="list-item">
+                        <strong>IaaS (Infraestrutura como Serviço)</strong>
+                        O provedor aluga o hardware bruto virtualizado (servidores e espaço em disco). Os maiores exemplos globais são o Amazon Web Services (AWS) — líder pioneiro de mercado —, o Microsoft Azure e o Google Cloud Platform (GCP).
+                        <div class="tech-chips">
+                            <span class="tech-chip">AWS</span>
+                            <span class="tech-chip">Microsoft Azure</span>
+                            <span class="tech-chip">Google Cloud</span>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <strong>PaaS (Plataforma como Serviço)</strong>
+                        O provedor oferece um ambiente completo com sistemas operacionais e ferramentas de desenvolvimento prontas para programadores criarem softwares sem se preocuparem com a infraestrutura básica. O Heroku e o AWS Elastic Beanstalk são referências nesta categoria.
+                        <div class="tech-chips">
+                            <span class="tech-chip">Heroku</span>
+                            <span class="tech-chip">AWS Elastic Beanstalk</span>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <strong>SaaS (Software como Serviço)</strong>
+                        É a entrega de aplicativos completos e prontos para o usuário final através do navegador. Exemplos extremamente famosos incluem o Google Drive/Workspace, Microsoft 365, Netflix e Salesforce.
+                        <div class="tech-chips">
+                            <span class="tech-chip">Google Workspace</span>
+                            <span class="tech-chip">Microsoft 365</span>
+                            <span class="tech-chip">Netflix</span>
+                            <span class="tech-chip">Salesforce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÓPICO 4 -->
+        <section id="topico-4">
+            <div class="card reveal">
+                <span class="section-number">Tópico 04</span>
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+                    </div>
+                    <h2>Termos Técnicos Essenciais</h2>
+                </div>
+                <p>Uma abordagem acadêmica exige o domínio de conceitos que definem a eficiência da nuvem:</p>
+
+                <div class="term-visuals">
+                    <div class="term-visual">
+                        <svg viewBox="0 0 100 70" id="elastic-svg">
+                            <rect class="elastic-bar" x="10" y="10" width="14" height="60" style="transform: scaleY(0.3)"/>
+                            <rect class="elastic-bar" x="30" y="10" width="14" height="60" style="transform: scaleY(0.3)"/>
+                            <rect class="elastic-bar" x="50" y="10" width="14" height="60" style="transform: scaleY(0.3)"/>
+                            <rect class="elastic-bar" x="70" y="10" width="14" height="60" style="transform: scaleY(0.3)"/>
+                        </svg>
+                        <button class="elastic-sim-btn" id="elastic-btn" type="button">Simular pico de tráfego</button>
+                        <div class="term-caption"><strong style="color:var(--text-primary)">Escalabilidade e Elasticidade</strong><br>capacidade de crescer sob demanda, automaticamente</div>
+                    </div>
+                    <div class="term-visual">
+                        <svg viewBox="0 0 100 70" fill="none">
+                            <rect x="22" y="12" width="20" height="46" rx="3" stroke="var(--accent-blue)" stroke-width="1.6"/>
+                            <rect x="58" y="12" width="20" height="46" rx="3" stroke="var(--accent-purple)" stroke-width="1.6"/>
+                            <line x1="27" y1="20" x2="37" y2="20" stroke="var(--text-tertiary)" stroke-width="1.4"/>
+                            <line x1="27" y1="26" x2="37" y2="26" stroke="var(--text-tertiary)" stroke-width="1.4"/>
+                            <line x1="63" y1="20" x2="73" y2="20" stroke="var(--text-tertiary)" stroke-width="1.4"/>
+                            <line x1="63" y1="26" x2="73" y2="26" stroke="var(--text-tertiary)" stroke-width="1.4"/>
+                            <circle class="ha-check" cx="50" cy="10" r="9" fill="var(--accent-cyan)"/>
+                            <path class="ha-check" d="M46 10l3 3 6-6" stroke="#0a0f1e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="term-caption"><strong style="color:var(--text-primary)">Alta Disponibilidade</strong><br>redundância geográfica garante operação contínua</div>
+                    </div>
+                    <div class="term-visual">
+                        <svg viewBox="0 0 100 70" fill="none">
+                            <line x1="10" y1="60" x2="90" y2="60" stroke="var(--card-border)" stroke-width="1"/>
+                            <path class="capex-line" d="M10 20 L30 45 L90 50"/>
+                            <path class="opex-line" d="M10 50 L90 46"/>
+                        </svg>
+                        <div class="chart-legend">
+                            <span><i class="legend-dot" style="background:#f97316"></i>CapEx</span>
+                            <span><i class="legend-dot" style="background:var(--accent-cyan)"></i>OpEx</span>
+                        </div>
+                        <div class="term-caption"><strong style="color:var(--text-primary)">CapEx → OpEx</strong><br>de investimento alto no início para custo contínuo</div>
+                    </div>
+                </div>
+
+                <div class="grid-list">
+                    <div class="list-item">
+                        <strong>Escalabilidade e Elasticidade</strong>
+                        Enquanto a escalabilidade é a capacidade do sistema de suportar uma carga maior de trabalho, a elasticidade é a habilidade de aumentar ou reduzir esses recursos de forma automática e em tempo real.
+                    </div>
+                    <div class="list-item">
+                        <strong>Alta Disponibilidade (High Availability)</strong>
+                        Garante que o sistema permaneça operacional e acessível quase 100% do tempo, utilizando redundância em diferentes regiões geográficas.
+                    </div>
+                    <div class="list-item">
+                        <strong>Transição de CapEx para OpEx</strong>
+                        A nuvem transforma gastos de capital em despesa operacional, onde o custo é contínuo, previsível e baseado no uso (pay-as-you-go).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÓPICO 5 -->
+        <section id="topico-5">
+            <div class="card reveal">
+                <span class="section-number">Tópico 05</span>
+                <div class="section-head">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>
+                    </div>
+                    <h2>Tendências Futuras</h2>
+                </div>
+                <p>O futuro da infraestrutura em nuvem aponta para a descentralização e a automação extrema:</p>
+
+                <div class="trend-visuals">
+                    <div class="trend-visual">
+                        <svg viewBox="0 0 140 100" fill="none">
+                            <path d="M105 25c-6 0-10-5-10-10 0-4 3-8 7-9 2-6 7-10 13-10 6 0 10 4 12 9 5 1 8 5 8 9 0 5-4 10-10 10h-20z" transform="scale(0.75) translate(20,5)" stroke="var(--text-tertiary)" stroke-width="1.3" fill="rgba(148,163,184,0.05)"/>
+                            <line class="edge-link-far" x1="95" y1="25" x2="30" y2="55"/>
+                            <line class="edge-link-far" x1="95" y1="25" x2="30" y2="80"/>
+                            <line class="edge-link-near" x1="30" y1="55" x2="30" y2="80"/>
+                            <circle class="edge-pulse" cx="30" cy="55" r="4" fill="none" stroke="var(--accent-cyan)" stroke-width="1.4"/>
+                            <circle cx="30" cy="55" r="4" fill="var(--accent-cyan)"/>
+                            <rect x="24" y="72" width="12" height="18" rx="2" fill="var(--accent-blue)"/>
+                            <circle cx="30" cy="80" r="2.5" fill="#0a0f1e"/>
+                        </svg>
+                        <div class="term-caption"><strong style="color:var(--text-primary)">Edge Computing</strong><br>processa dados perto de onde são gerados</div>
+                    </div>
+                    <div class="trend-visual">
+                        <svg viewBox="0 0 140 100" fill="none">
+                            <rect class="fx-bracket" x="35" y="20" width="70" height="60" rx="14"/>
+                            <text class="fx-glyph" x="70" y="58" text-anchor="middle">f(x)</text>
+                        </svg>
+                        <div class="term-caption"><strong style="color:var(--text-primary)">Arquitetura Serverless</strong><br>código executado sob demanda</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÓPICO 6 -->
+        <section id="topico-6">
+            <div class="card reveal">
+                <span class="section-number">Tópico 06</span>
+                <svg class="conclusion-visual" viewBox="0 0 100 100" fill="none">
+                    <circle class="bulb-glow" cx="50" cy="42" r="26"/>
+                    <path d="M50 20c-13 0-22 10-22 22 0 9 5 15 11 19v9a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3v-9c6-4 11-10 11-19 0-12-9-22-22-22z" stroke="var(--accent-blue)" stroke-width="1.6" fill="rgba(56,189,248,0.06)"/>
+                    <line x1="42" y1="79" x2="58" y2="79" stroke="var(--accent-blue)" stroke-width="1.6"/>
+                    <line x1="44" y1="85" x2="56" y2="85" stroke="var(--accent-blue)" stroke-width="1.6"/>
+                </svg>
+                <div class="section-head" style="justify-content:center; text-align:center; flex-direction:column; gap:8px;">
+                    <h2>Conclusão</h2>
+                </div>
+                <p>Em suma, a computação em nuvem deixou de ser uma vantagem competitiva para se tornar uma necessidade de sobrevivência no ecossistema digital. Ao democratizar o acesso a supercomputadores e ferramentas de ponta para qualquer pessoa com uma conexão à internet, a nuvem redefine a economia global, impulsiona a inovação e desenha um futuro onde a infraestrutura física se torna invisível.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© Apresentação Acadêmica — A Revolução da Computação em Nuvem</p>
+            <p>Fontes de pesquisa: AWS, Microsoft Azure, Google Cloud, IBM Cloud.</p>
+        </footer>
+    </div>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button id="back-to-top" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
